@@ -1,4 +1,4 @@
-# Ui Jeong Moon academic website
+# Ui Jeong Moon Academic Website
 
 A bilingual English/Korean static academic website prepared for **https://ujmoon-prof.github.io/**.
 
