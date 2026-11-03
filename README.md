@@ -44,3 +44,14 @@ Visit http://localhost:8000.
 - Added a supplied profile portrait on the home page (`profile-photo.png`).
 - Preserved Korean-first display and expandable professional credentials.
 - Corrected language dictionaries for expanded credential labels.
+
+Version 1.4: Reduced portrait size and placed research focus panel beside it for a smoother, balanced hero layout on desktop and mobile.
+
+## v1.5 changes
+- Moved the portrait from the hero to About (01), with text wrapping and responsive sizing.
+- Credentials use one toggle label that changes between View all/Hide (English) and 전체 자격 보기/전체 자격 접기 (Korean).
+
+
+Version 1.6: Language selector order is 한국어 then EN. Credential disclosure labels are Show more / Show less in both language modes.
+
+Version 1.7: About portrait is in a responsive grid, with a controlled crop and no text float.

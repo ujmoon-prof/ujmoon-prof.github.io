@@ -23,3 +23,13 @@
 #about .two-col>div:first-child::after{content:'';display:block;clear:both}
 @media(max-width:850px){.hero-visual{justify-self:start;max-width:440px}}
 @media(max-width:580px){.about-photo{width:118px;margin-left:16px}.hero-inner{grid-template-columns:1fr}}
+
+/* v1.7: Integrated portrait in About; responsive, without text float. */
+#about .two-col{grid-template-columns:minmax(0,1.25fr) minmax(270px,.85fr);gap:clamp(28px,5vw,72px)}
+#about .about-intro{display:grid;grid-template-columns:minmax(0,1fr) clamp(132px,14vw,190px);align-items:start;gap:clamp(18px,2.5vw,34px)}
+#about .about-copy{min-width:0}
+#about .about-portrait{margin:3px 0 0;overflow:hidden;border-radius:9px;aspect-ratio:4/5;background:#e9edf1;box-shadow:0 10px 24px rgba(20,45,78,.10)}
+#about .about-photo{float:none;display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:50% 24%;margin:0;border-radius:0;box-shadow:none}
+@media(max-width:980px){#about .two-col{grid-template-columns:1fr;gap:35px}#about .about-intro{grid-template-columns:minmax(0,1fr) clamp(145px,25vw,200px)}#about .info{max-width:100%;}}
+@media(max-width:580px){#about .about-intro{grid-template-columns:minmax(0,1fr) 112px;gap:16px}#about .about-portrait{aspect-ratio:3/4}#about .about-copy h2{font-size:clamp(25px,7vw,34px)}#about .about-copy .large{font-size:15px}}
+@media(max-width:380px){#about .about-intro{grid-template-columns:1fr}#about .about-portrait{grid-row:1;width:136px;aspect-ratio:4/5;margin-bottom:5px}}
