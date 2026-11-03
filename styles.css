@@ -51,3 +51,24 @@
  #about .info{padding-left:18px}
 }
 @media(max-width:350px){#about .about-mobile-profile{grid-template-columns:90px minmax(0,1fr);gap:12px}#about .about-mobile-portrait{width:90px}}
+
+/* v1.9: definitive phone layout, overriding earlier portrait rules */
+@media screen and (max-width: 580px) {
+  #about .about-intro { display:block !important; min-width:0; }
+  #about .about-copy { width:100%; min-width:0; }
+  #about .about-portrait { display:none !important; }
+  #about .about-photo { display:none !important; }
+  #about .about-mobile-profile { display:grid !important; grid-template-columns:104px minmax(0,1fr) !important; align-items:center; gap:16px; width:100%; margin:0 0 18px; }
+  #about .about-mobile-portrait { display:block !important; width:104px !important; height:130px !important; max-width:104px; max-height:130px; margin:0 !important; overflow:hidden; border-radius:8px; }
+  #about .about-mobile-portrait img { display:block !important; width:104px !important; height:130px !important; max-width:104px !important; max-height:130px !important; object-fit:cover !important; object-position:center 24%; float:none !important; margin:0 !important; }
+  #about .about-mobile-meta { min-width:0; }
+  #about .about-mobile-meta strong { font-size:16px; }
+  #about .about-mobile-meta p { font-size:12px; line-height:1.5; }
+  #about .about-copy .large { font-size:15px; line-height:1.7; margin:0; }
+  #about .two-col { display:grid; grid-template-columns:minmax(0,1fr); gap:28px; }
+  #about .info { padding-left:18px; }
+}
+@media screen and (max-width:350px) {
+  #about .about-mobile-profile { grid-template-columns:90px minmax(0,1fr) !important; gap:12px; }
+  #about .about-mobile-portrait, #about .about-mobile-portrait img { width:90px !important; height:113px !important; }
+}
