@@ -72,3 +72,18 @@
   #about .about-mobile-profile { grid-template-columns:90px minmax(0,1fr) !important; gap:12px; }
   #about .about-mobile-portrait, #about .about-mobile-portrait img { width:90px !important; height:113px !important; }
 }
+
+/* v2.1: On phones, position the single portrait to the right of the
+   Academic Profile / 약력 heading, with the biography below. */
+@media screen and (max-width:580px) {
+  #about .about-copy {display:grid;grid-template-columns:minmax(0,1fr) 104px;column-gap:16px;align-items:start;}
+  #about .about-copy h2 {grid-column:1;grid-row:1;margin:0;align-self:center;min-width:0;}
+  #about .about-mobile-profile {grid-column:2;grid-row:1;display:block !important;width:104px;margin:0 !important;}
+  #about .about-mobile-portrait {width:104px !important;height:130px !important;}
+  #about .about-mobile-meta {display:none !important;}
+  #about .about-copy > .large {grid-column:1 / -1;grid-row:2;margin-top:18px !important;}
+}
+@media screen and (max-width:350px) {
+  #about .about-copy {grid-template-columns:minmax(0,1fr) 90px;gap:12px;}
+  #about .about-mobile-profile {width:90px !important;}
+}
