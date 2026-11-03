@@ -87,3 +87,20 @@
   #about .about-copy {grid-template-columns:minmax(0,1fr) 90px;gap:12px;}
   #about .about-mobile-profile {width:90px !important;}
 }
+
+/* v2.2: On phones, place the portrait beside the biography paragraph. */
+@media screen and (max-width:580px) {
+  #about .about-intro {display:block !important;}
+  #about .about-copy {display:flow-root !important; width:100%;}
+  #about .about-copy h2 {display:block; margin:0 0 20px; font-size:clamp(27px,7vw,34px);}
+  #about .about-mobile-profile {display:block !important; float:right !important; width:104px !important; margin:2px 0 10px 16px !important;}
+  #about .about-mobile-portrait {display:block !important; width:104px !important; height:130px !important;}
+  #about .about-mobile-portrait img {width:104px !important; height:130px !important;}
+  #about .about-mobile-meta {display:none !important;}
+  #about .about-copy > .large {display:block; margin:0 !important; font-size:15px; line-height:1.75; overflow-wrap:break-word;}
+  #about .about-portrait {display:none !important;}
+}
+@media screen and (max-width:350px) {
+  #about .about-mobile-profile {width:90px !important; margin-left:12px !important;}
+  #about .about-mobile-portrait, #about .about-mobile-portrait img {width:90px !important;height:113px !important;}
+}
