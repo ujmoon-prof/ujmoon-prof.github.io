@@ -55,3 +55,6 @@ Version 1.4: Reduced portrait size and placed research focus panel beside it for
 Version 1.6: Language selector order is 한국어 then EN. Credential disclosure labels are Show more / Show less in both language modes.
 
 Version 1.7: About portrait is in a responsive grid, with a controlled crop and no text float.
+
+
+v1.8: On phones (580px and below), About displays a compact portrait alongside the name and affiliation, with the full introduction underneath. Desktop and tablet About layout is unchanged. Upload index.html, styles.css, and app.js.
